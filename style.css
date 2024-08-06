@@ -17,7 +17,8 @@
 :root {
 --text-color: #0b0c10;
 --container-color: #1f2833;
---bg-color: #d5d6d7;
+--bg-color: #eee;
+/* --bg-color: #d5d6d7; */
 --second-color: #66fcf1;
 --extra-color: #45a29e;
 }
@@ -82,5 +83,35 @@ nav{
     align-items: center;
 }
 .home-text{
-    
+    color: var(--bg-color);
+    text-align: center;
 }
+.home-title{
+    font-size: 3.5rem;
+}
+.home-subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* Post filters */
+
+.post-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+}
+.filter-item{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.active-filter{
+    background: var(--second-color);
+    color: var(--bg-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
